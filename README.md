@@ -10,7 +10,7 @@ Some challenges faced were pulling the correct data wanted, and as this project 
 
 ## Deployed Link
 
-link : 
+link : https://ws538.github.io/MyWeather/
 
 ## How to Use,
 
