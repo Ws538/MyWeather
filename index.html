@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/style.css" rel="stylesheet" />
+    <title>MyWeather</title>
+  </head>
+  <body>
+    <div class="firstContainer">
+      <div class="card">
+        <input type="text" class="search" placeholder="City Name" />
+        <button>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+              clip-rule="evenodd"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <div>
+          <h2 class="cityname"></h2>
+          <h2 class="timeNow"></h2>
+          <div><h1 class="temp"></h1></div>
+          <div class="flexbox">
+            <img src="" alt="" class="icon" />
+            <div class="description"></div>
+          </div>
+          <div class="humidity"></div>
+          <div class="windSpeed"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secondContainer">
+      <div class="card">
+        <div class="lowerContainer">
+          <h1 id="day1"></h1>
+          <h2 id="mintemp1"></h2>
+          <h2 id="maxtemp1"></h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="lowerContainer">
+          <h1 id="day2"></h1>
+          <h2 id="mintemp2"></h2>
+          <h2 id="maxtemp2"></h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="lowerContainer">
+          <h1 id="day3"></h1>
+          <h2 id="mintemp3"></h2>
+          <h2 id="maxtemp3"></h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="lowerContainer">
+          <h1 id="day4"></h1>
+          <h2 id="mintemp4"></h2>
+          <h2 id="maxtemp4"></h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="lowerContainer">
+          <h1 id="day5"></h1>
+          <h2 id="mintemp5"></h2>
+          <h2 id="maxtemp5"></h2>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/script.js"></script>
+</html>
