@@ -1,0 +1,72 @@
+body{
+    font-family: "Open Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  height: 100vh;
+  margin: 0;
+}
+
+.firstContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.card {
+  background-color: rgba(237, 236, 236, 0.822);
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.search {
+  border: none;
+  padding: 0.4em;
+  border-radius: 15px;
+  width: 18em;
+  height: 1.6em;
+}
+
+button {
+  margin: 5px;
+  border-radius: 50%;
+  height: 33px;
+  width: 34px;
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+.secondContainer {
+    position: relative;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    top: 7%;
+}
+
+.lowerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .futureforecast {
+
+} */
