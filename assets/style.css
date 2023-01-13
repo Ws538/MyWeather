@@ -1,5 +1,7 @@
+* {font-family: "Open Sans", sans-serif;}   
+
 body{
-    font-family: "Open Sans", sans-serif;
+    
   color: rgb(0, 0, 0);
   height: 100vh;
   margin: 0;
@@ -10,6 +12,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 50vh;
+  gap:16em;
 }
 
 .flexbox {
@@ -64,6 +67,14 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+ul {
+list-style-type: none;
+}
+
+li {
+  font-size: 20px;
 }
 
 

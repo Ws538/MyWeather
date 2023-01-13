@@ -29,7 +29,7 @@ let weather = {
 
     var dtc = dt + timezone;
 
-    var d = new Date(dtc * 1000).toGMTString().toLocaleString("en-AU")
+    var d = new Date(dtc * 1000).toGMTString().toLocaleString("en-AU");
 
     let twoDigitInteger;
 
@@ -52,11 +52,25 @@ let weather = {
       "Humidity:" + " " + humidity + "%";
     document.querySelector(".windSpeed").innerHTML =
       "Wind Speed:" + " " + speed + "km/h";
-    document.querySelector(".timeNow").innerHTML = d
+    document.querySelector(".timeNow").innerHTML = d;
   },
 
   search: function () {
     this.fetchWeather(document.querySelector(".search").value);
+    const searchText = input.value;
+
+    localStorage.setItem("searchList", JSON.stringify([searchText]));
+
+    var retrieveData = localStorage.getItem("searchList");
+
+    var cities = JSON.parse(retrieveData);
+
+    const listContainer = document.getElementById("list-container");
+    cities.forEach(function (text) {
+      const listItem = document.createElement("li");
+      listItem.innerText = text;
+      listContainer.appendChild(listItem);
+    });
   },
 };
 
@@ -92,9 +106,9 @@ let weatherFive = {
   },
   displayWeatherFive: function (data) {
     for (i = 0; i < 5; i++) {
-      var dt  = data.list[i].dt;
+      var dt = data.list[i].dt;
 
-      var d = new Date(dt * 1000).toLocaleTimeString("en-AU");  
+      var d = new Date(dt * 1000).toLocaleTimeString("en-AU");
 
       var tempmin = data.list[i].main.temp_min;
 
@@ -113,6 +127,22 @@ let weatherFive = {
     this.fetchWeather(document.querySelector(".search").value);
   },
 };
+
+// // Get the stored search text from localStorage
+// const storedSearchText = localStorage.getItem("searchText");
+// if(storedSearchText !== null){
+//     // Create a new list element
+//     const listItem = document.createElement("li");
+
+//     // Set the text of the list item to the stored search text
+//     listItem.innerText = storedSearchText;
+
+//     // Get the element where you want to add the list item
+//     const listContainer = document.getElementById("list-container");
+
+//     // Append the list item to the list container
+//     listContainer.appendChild(listItem);
+// }
 
 weather.fetchWeather("Sydney");
 weatherFive.fetchWeather("Sydney");

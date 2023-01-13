@@ -16,4 +16,6 @@ link : https://ws538.github.io/MyWeather/
 
 Simply type in the city of choice and click the search button or simply hit "Enter"
 
+A recent Searches Tab displays you latest recent searches that resets each time so you wont have to delete all the cities you have searached!
+
 ![ScreenShot](./assets/images/Screenshot%202023-01-12%20at%204.20.23%20pm.png)
